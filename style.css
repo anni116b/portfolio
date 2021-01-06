@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#screen {
+    max-width: 1200px;
+    height: 100vh;
+}
+
+
+#background {
+    background-image: url(baggrund_forside.svg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    max-width: none;
+    background-position: 50% 40%;
+    50%;
+    position: absolute;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px
+}
+
+.topnav a:hover {
+    font-size: 32px;
+}
+
+#sky1_sprite {
+    background-image: url(sky1.svg);
+    position: absolute;
+    height: 23vw;
+    width: 55.2vw;
+    background-size: cover;
+}
+
+#sky2_sprite {
+    background-image: url(sky2.svg);
+    position: absolute;
+    height: 20.5vw;
+    width: 59.28vw;
+    background-size: cover;
+    top: 50vw;
+}
+
+@media (min-width: 700px) {
+    #background {
+        overflow: hidden;
+    }
+
+    .topnav {
+        overflow: hidden;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        margin-top: 15px;
+        flex-direction: row;
+    }
+
+    .topnav a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    #sky1_sprite {
+        background-image: url(sky1.svg);
+        height: 10vw;
+        width: 24.20vw;
+        background-size: cover;
+        position: absolute;
+        top: 17vw;
+    }
+
+    #sky1_container {
+        position: absolute;
+    }
+
+    #sky2_sprite {
+        background-image: url(sky2.svg);
+        height: 6.5vw;
+        width: 18.28vw;
+        background-size: cover;
+        position: absolute;
+        top: 30vw;
+        left: 26vw;
+
+    }
+
+    #sky2_container {
+        position: absolute;
+    }
+
+    #sky3_sprite {
+        background-image: url(sky3.svg);
+        height: 6vw;
+        width: 22.7vw;
+        background-size: cover;
+        position: absolute;
+        top: 15vw;
+
+    }
+
+    #sky3_container {
+        position: absolute;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/*@media (min-width: 900px);
+
+
+#background {
+
+
+    width: 100%;
+    height: 56.5vh;
+    background-size: cover;
+
+}
+
+.inner_div {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid white;
+}
+
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.topnav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#sky1_sprite {
+    background-image: url(sky1.svg);
+    height: 10vw;
+    width: 24.20vw;
+    background-size: cover;
+    position: absolute;
+    top: 22vw;
+}
+
+#sky1_container {
+    position: absolute;
+}
+
+#sky2_sprite {
+    background-image: url(sky2.svg);
+    height: 6.5vw;
+    width: 18.28vw;
+    background-size: cover;
+    position: absolute;
+    top: 30vw;
+    left: 26vw;
+
+}
+
+#sky2_container {
+    position: absolute;
+}
+
+#sky3_sprite {
+    background-image: url(sky3.svg);
+    height: 6vw;
+    width: 22.7vw;
+    background-size: cover;
+    position: absolute;
+    top: 15vw;
+
+}
+
+#sky3_container {
+    position: absolute;
+}
+
+*/
+/**********Animationer******/
+
+.move1 {
+    animation-name: move_kf;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes move_kf {
+    /*100% {
+        transform: translateX(50vw);
+    }*/
+
+    from {
+        transform: translateX(40vw);
+    }
+
+    to {
+        transform: translateX(70vw);
+    }
+
+}
+
+.move2 {
+    animation-name: move2_kf;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes move2_kf {
+    from {
+        transform: translateX(20vw);
+    }
+
+    to {
+        transform: translateX(-5vw);
+    }
+}
+
+.floating {
+    animation-name: floating_kf;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes floating_kf {
+
+    0% {
+        transform: translateY(2vw);
+    }
+
+    20% {
+        transform: translateY(-2vw);
+    }
+
+    40% {
+        transform: translateY(2vw);
+    }
+
+    80% {
+        transform: translateY(-2vw);
+    }
+
+    100% {
+        transform: translateY(2vw);
+    }
+
+}
+
+.floating2 {
+    animation-name: floating_kf;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes floating2_kf {
+    0% {
+        transform: translateY(-4vw);
+    }
+
+    100% {
+        transform: translateY(4vw);
+    }
+}

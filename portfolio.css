@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 1500vw;
+    background-image: linear-gradient(#F7F5C9, #EE6A7D, #DBC091, #F7F5C9);
+}
+
+#screen {
+    width: 100%;
+    height: 56.5vw;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+p {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+img {
+    text-align: center;
+}
+
+/*************first section***********/
+
+
+
+/*#background {
+    width: 100vw;
+    height: 1000vw;
+    background-image: linear-gradient(#EE6A7D, #F7F5C9, #DBC091, #F7F5C9);
+}*/
+
+.nav {
+    display: grid;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 27px;
+
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+}
+
+h1 {
+    height: 110vw;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Lexend Peta', sans-serif;
+}
+
+#sky1_container {
+    background-image: url(Artboard%2010.svg);
+    height: 30vw;
+    width: 68.7vw;
+    position: relative;
+    top: 23vw;
+}
+
+#sky2_container {
+    background-image: url(Artboard%208.svg);
+    height: 33vw;
+    width: 37.33vw;
+    position: relative;
+    top: 70vw;
+    left: 67vw;
+}
+
+#sky3_container {
+    background-image: url(Artboard%2012.svg);
+    height: 35vw;
+    width: 88.23vw;
+    top: 77vw;
+    right: 12vw;
+    position: relative;
+
+}
+
+#sky4_container {
+    background-image: url(Artboard%2011.svg);
+    height: 40vw;
+    width: 74.2vw;
+    position: relative;
+    top: -31vw;
+    right: -8vw;
+
+}
+
+#sky5_container {
+    background-image: url(Artboard%209.svg);
+    height: 40vw;
+    width: 57vw;
+    position: relative;
+    top: -135vw;
+    left: 69vw;
+}
+
+/*********SECOND SECTION************/
+
+.inner_div {
+    background-color: #FCDBD2;
+    height: auto;
+    width: auto;
+    margin: 30px;
+    margin-top: 40px;
+}
+
+/*********Third SECTION************/
+
+/*#start_screen {
+    background-image: url(spil_start.png);
+    height: 40vw;
+    width: 71.14vw;*/
+
+
+}
+
+/*********fifth SECTION************/
+
+.video_container {
+    display: grid;
+    justify-content: center;
+
+}
+
+.video_container .video {
+    height: 200px;
+    width: 300px;
+    padding-top: 27px;
+    padding-left: 20px;
+}
+
+.video_container .video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+}
+
+
+
+@media (min-width: 700px) {
+
+    body {
+        width: 100vw;
+        height: auto;
+    }
+
+    #first_section {
+        background-image: url(baggrund2.0.svg);
+        background-repeat: no-repeat;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav a {
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Kaushan Script', cursive;
+        color: white;
+    }
+
+    h1 {
+
+        text-align: center;
+        height: 40vw;
+        font-size: 8rem;
+        letter-spacing: 1.5rem;
+        text-shadow: 13px 20px 8px #70A8B9;
+    }
+
+    #background {
+        width: 100vw;
+    }
+
+    #sky1_container {
+        display: none;
+    }
+
+    #sky2_container {
+        display: none;
+    }
+
+    #sky3_container {
+        display: none;
+    }
+
+    #sky4_container {
+        /*  top: 85vw;
+        right: -39vw;
+        z-index: 0;*/
+        display: none;
+    }
+
+    #sky5_container {
+        display: none;
+    }
+
+    #second_section {
+        padding-top: 52rem;
+        align-content: center;
+        display: block;
+
+    }
+
+    .inner_div {
+        background-color: #FCDBD2;
+        height: auto;
+        width: 1200px;
+        margin-top: 10px;
+        z-index: 3;
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        right: 5%;
+        left: 5%;
+    }
+
+    /******************* Third section: 1 artikel*************/
+    #third_section .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    /******************* Fourth section*************/
+    #fourth_section .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+
+    /******************* Fourth section*************/
+    #fifth_section .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    #foto_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
