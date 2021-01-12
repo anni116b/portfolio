@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #screen {
@@ -12,7 +11,7 @@ body {
 
 
 #background {
-    background-image: url(baggrund_forside.svg);
+    background-image: url(baggrund_forside2.svg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -20,6 +19,7 @@ body {
     background-position: 50% 40%;
     50%;
     position: absolute;
+    overflow: hidden;
 }
 
 .topnav {
@@ -30,31 +30,34 @@ body {
     padding-top: 25px;
     text-transform: uppercase;
     text-align: center;
+
 }
 
 .topnav a {
     text-decoration: none;
     color: white;
-    font-size: 25px
+    font-size: 25px;
+    font-family: 'Lexend Peta', sans-serif;
 }
 
 .topnav a:hover {
-    font-size: 29px;
+
+    color: darkslategray;
 }
 
 #sky1_sprite {
-    background-image: url(sky1.svg);
+    background-image: url(fluffy_sky.svg);
     position: absolute;
-    height: 23vw;
+    height: 27vw;
     width: 55.2vw;
     background-size: cover;
 }
 
 #sky2_sprite {
-    background-image: url(sky2.svg);
+    background-image: url(ny_sky1.svg);
     position: absolute;
     height: 20.5vw;
-    width: 59.28vw;
+    width: 63.28vw;
     background-size: cover;
     top: 50vw;
 }
@@ -74,19 +77,18 @@ body {
     }
 
     .topnav a {
-        color: white;
         text-align: center;
         text-decoration: none;
         font-size: 1.5rem;
         display: grid;
         grid-template-columns: 1fr;
-        font-family: 'Kaushan Script', cursive;
+        font-family: 'Lexend Peta', sans-serif;
     }
 
     #sky1_sprite {
-        background-image: url(sky1.svg);
-        height: 10vw;
-        width: 24.20vw;
+        background-image: url(fluffy_sky.svg);
+        height: 12vw;
+        width: 24.2vw;
         background-size: cover;
         position: absolute;
         top: 17vw;
@@ -97,13 +99,13 @@ body {
     }
 
     #sky2_sprite {
-        background-image: url(sky2.svg);
-        height: 6.5vw;
-        width: 18.28vw;
+        background-image: url(mini_sky.svg);
+        height: 7vw;
+        width: 12.7vw;
         background-size: cover;
         position: absolute;
-        top: 30vw;
-        left: 26vw;
+        top: 27vw;
+        left: 30vw;
 
     }
 
@@ -112,9 +114,9 @@ body {
     }
 
     #sky3_sprite {
-        background-image: url(sky3.svg);
-        height: 6vw;
-        width: 22.7vw;
+        background-image: url(ny_sky1.svg);
+        height: 8vw;
+        width: 24.28vw;
         background-size: cover;
         position: absolute;
         top: 15vw;
@@ -129,95 +131,6 @@ body {
 }
 
 
-
-
-
-
-
-
-/*@media (min-width: 900px);
-
-
-#background {
-
-
-    width: 100%;
-    height: 56.5vh;
-    background-size: cover;
-
-}
-
-.inner_div {
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
-    border: 1px solid white;
-}
-
-
-.topnav {
-    overflow: hidden;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    margin-top: 15px;
-}
-
-.topnav a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    font-family: 'Kaushan Script', cursive;
-}
-
-#sky1_sprite {
-    background-image: url(sky1.svg);
-    height: 10vw;
-    width: 24.20vw;
-    background-size: cover;
-    position: absolute;
-    top: 22vw;
-}
-
-#sky1_container {
-    position: absolute;
-}
-
-#sky2_sprite {
-    background-image: url(sky2.svg);
-    height: 6.5vw;
-    width: 18.28vw;
-    background-size: cover;
-    position: absolute;
-    top: 30vw;
-    left: 26vw;
-
-}
-
-#sky2_container {
-    position: absolute;
-}
-
-#sky3_sprite {
-    background-image: url(sky3.svg);
-    height: 6vw;
-    width: 22.7vw;
-    background-size: cover;
-    position: absolute;
-    top: 15vw;
-
-}
-
-#sky3_container {
-    position: absolute;
-}
-
-*/
 /**********Animationer******/
 
 .move1 {
@@ -235,7 +148,7 @@ body {
     }*/
 
     from {
-        transform: translateX(40vw);
+        transform: translateX(50vw);
     }
 
     to {
@@ -259,7 +172,7 @@ body {
     }
 
     to {
-        transform: translateX(-5vw);
+        transform: translateX(7vw);
     }
 }
 
