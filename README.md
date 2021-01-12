@@ -1,3 +1,3 @@
 # portfolio
 
-Min eksams portfolio 
+Min eksamens portfolio 
